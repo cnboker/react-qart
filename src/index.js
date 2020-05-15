@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import QArt from 'qartjs';
-
+import PropTypes from 'prop-types'
 
 let getDOMNode;
 const version = React.version.split(/[.-]/);
@@ -52,10 +52,10 @@ Qart.defaultProps = {
 };
 
 Qart.propTypes = {
-  value: React.PropTypes.string.isRequired,
-  imagePath: React.PropTypes.string.isRequired,
-  filter: React.PropTypes.string,
-  style: React.PropTypes.object,
+  value: PropTypes.string.isRequired,
+  imagePath: PropTypes.string.isRequired,
+  filter: PropTypes.string,
+  style: PropTypes.object,
 };
 
 export default Qart;
